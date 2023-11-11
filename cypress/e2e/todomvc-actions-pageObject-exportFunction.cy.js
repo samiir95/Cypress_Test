@@ -9,9 +9,11 @@ import {
     validateTodoCompletedState,
     clearCompleted,
     validateNumberOfTodosShown
-} from '../page-objects/todo-page-exportFunction'
+} from '../page-objects/todo-page'
+
 
 describe('todo actions', () => {
+    
     beforeEach(() => {
         navigate()
 

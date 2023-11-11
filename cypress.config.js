@@ -1,6 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  projectId: "6b3m9z",
   watchForFileChanges: false,
   eyesIsDisabled: false,
   eyesFailCypressOnDiff: true,
@@ -19,5 +20,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
+
   },
 })

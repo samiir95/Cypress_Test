@@ -9,6 +9,7 @@ describe('Todo actions', () => {
     })
     
     it('should add a new todo to the list', () => {
+        // tag: smoke
         cy.get('label').should('have.text', 'Clean room')
         cy.get('.toggle').should('not.be.checked')
     })
